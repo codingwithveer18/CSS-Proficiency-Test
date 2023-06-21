@@ -1,0 +1,58 @@
+html {
+  background-color: #ffc145;
+  overflow: hidden;
+}
+body {
+  color: #fffffb;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+section {
+  padding: 30vh 0;
+}
+
+.icon {
+  background: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 2em;
+}
+
+.first {
+  background: #ffc145;
+  position: relative;
+}
+
+.first::after,
+.first::before {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 150px;
+  background: #ffc145;
+  bottom: -1em;
+  z-index: 11;
+}
+
+.first::before {
+  right: 50%;
+  transform: skew(0, 20deg);
+}
+
+.first::after {
+  left: 50%;
+  transform: skew(0, -20deg);
+}
+
+.second {
+  background: #ff6b6c;
+  width: 2500px;
+  margin-left: -10px;
+}
